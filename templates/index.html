@@ -5,7 +5,7 @@
 
 {% for article in articles %}
 
-    {% if loop.index == 1 %}
+    {% if loop.index <= NUM_FULL_ARTICLES %}
 
       <article>
         <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
@@ -14,13 +14,13 @@
 
       <hr />
 
-      {% if loop.length  > 1 %}
+      {% if loop.index == NUM_FULL_ARTICLES and loop.length > NUM_FULL_ARTICLES %}
         <div>
           <h3>Last posts</h3>
           <ol class="archive">
       {% endif %}
     
-    {% elif loop.index < 7 %}
+    {% elif loop.index < NUM_LINKED_ARTICLES + NUM_FULL_ARTICLES %}
       <li>
         {% include 'article_link.inc.html' %}
       </li>
