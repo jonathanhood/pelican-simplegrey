@@ -20,8 +20,7 @@ figure,
 footer,
 header,
 nav,
-section,
-time {
+section {
   display: block;
 }
 
@@ -129,7 +128,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  padding: 0.7em 0 0.3em;
 }
 
 h1 a {
@@ -203,8 +201,6 @@ article.summary .metadata {
 }
 
 article.full .metadata {
-  width: 25%;
-  float: right;
   margin: 0 0 2% 1%;
 }
 
