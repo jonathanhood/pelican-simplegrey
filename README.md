@@ -10,6 +10,8 @@
 ## Options ##
 
 ``PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT = '__fle__' `` option allows you add [Twitter summary card metadata](https://dev.twitter.com/docs/cards/types/summary-card) in your posts 
+``NUM_FULL_ARTICLES = 1`` option configures the number of fully visible articles on the front page
+``NUM_LINKED_ARTICLES = 6`` option configures the number of linked (but not summarized) articles on the front page.
 
 ## Credits ##
 
